@@ -15,37 +15,21 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 // Generare un numero random per il giocatore
-let numeroRandomComputer = 5; //cercare come generare un numero random da 1 a 6 in javascirp
+
+let numeroRandomComputer = Math.floor((Math.random() * 6) + 1); //cercare come generare un numero random da 1 a 6 in javascirp
 //genera un numero random per il computer
-let numeroRandomGiocatore = 1;
+let numeroRandomGiocatore = Math.floor((Math.random() * 6) + 1);
 // stabiliamo il vincitore: 
-
-// 1 < 2
-
-// 7 < 1
-
-// paolo < marco
-
-// se numeroRandomComputer < numeroRandomGiocatore
-//il giocatore vince
-//altrimenti se il computer e > del giocatore
-// vince il computer
-//altrimenti pareggio
 
 if(numeroRandomComputer > numeroRandomGiocatore){
     //stampare il vincitore (computer9)
+    console.log ('Ha vinto il computer');
 }else if(numeroRandomComputer < numeroRandomGiocatore){
     //stampare il  vincitore (giocatore)
+    console.log ('Ha vinto il giocatore');
 }else{
     //stampare il pareggio
+    console.log ('Pareggio');
 }
 
-/*
 
-    if (condizione o valore boleano){ //espressioni boolean
-        //fai queste istruzioni se vera la condizione = fai se vero
-    }else{
-        //fai queste istruzioni se è falsa la condizione = fai se falso
-    }
-
-*/
